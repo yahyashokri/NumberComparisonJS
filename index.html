@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var numbers = [293,827,352, 525,523,643,734,732,944,20,32,987,11,748,245];
+            var largest = numbers[0]
+            var smallest = numbers[0]
+            numbers.forEach (function (number) {
+                if (number > largest){
+                    largest = number;
+                }
+                if (number < smallest) {
+                    smallest = number;
+                }
+            });
+            console.log(`The smallest number is "${smallest}" and the largest number is "${largest}"`);
+        </script>
+    </body>
+</html>
